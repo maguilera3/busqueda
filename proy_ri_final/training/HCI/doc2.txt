@@ -1,0 +1,95 @@
+Human
+-
+Computer Interaction: Definition, Terminology 
+ 
+ 
+The rapid growth of computing has made effective human
+-
+computer 
+interaction essential. HCI (human
+-
+computer interaction) is the study of how 
+people interact with computers and to what extent computers 
+are or are not 
+developed for successful interaction with human beings. Utilizing computers 
+had always begged the question of interfacing. The methods by which human 
+has been interacting with computers has travelled a long way. The journey 
+still continues a
+nd new designs of technologies and systems appear more and 
+more every day and the research in this area has been growing very fast in 
+the last few decades. The growth in Human Computer Interaction (HCI) field 
+has not only been in quality of interaction, it
+ 
+has also experienced different 
+branching in its history. Instead of designing regular interfaces, the different 
+research branches have had different focus on the concepts of multimodality 
+rather than unimodality, intelligent adaptive interfaces rather tha
+n 
+command/action based ones, and finally active rather than passive interfaces 
+[66]. Gustav Evertsson describes Human Computer Interaction is about 
+designing computer systems so the user can carry out their activities 
+productively and safely. It is not how
+ 
+easy something is to use, it is about 
+
+Interaction is a discipline concerned with the design, evaluation and 
+implementation of interactive computer systems for human use and with the 
+stu
+
+variety of different kind of people and not just technical specialists as in the 
+past, so it is important to design HCI that supports the needs, knowledge and 
+
+[36][13]. As its name implies, HCI consists of 
+three parts: the user, the computer itself, and the ways they work together. 
+User: By "user", we may mean an individual user or a group of users working 
+together. An appreciation of the way people's sensory sy
+stems (sight, 
+hearing, touch) relay information is vital. Also, different users form different 
+conceptions or mental models about their interactions and have different 
+ways of learning and keeping knowledge. In addition, cultural and national 
+differences p
+lay an important part. Computer: When we talk about the 
+computer, we're referring to any technology ranging from desktop 
+computers, to large scale computer systems. For example, if we were 
+discussing the design of a Website, then the Website itself would b
+e referred 
+to as "the computer". Devices such as mobile phones or VCRs can also be 
+
+between humans and machines. In spite of these, HCI attempts to ensure 
+that they both get on with ea
+ch other and interact successfully. In order to 
+achieve a usable system, you need to apply what you know about humans 
+and computers, and consult with likely users throughout the design process. 
+In real systems, the schedule and the budget are important, an
+d it is vital to 
+find a balance between what would be ideal for the users and what is 
+feasible in reality [13]. Human
+-
+Computer Interaction studies how people 
+design, implement and use computer interfaces [31]. HCI has become an 
+umbrela term for a number of
+ 
+disciplines including theories of education, 
+psychology, collaboration as well as efficiency and ergonomics [32].
+ 
+Recent developments in the area of HCI have shown an interest in adaptive 
+interfaces, speech recognition, gestures and the role of time [33] 
+[34] [35] 
+[1]. 5 Having these concepts in mind and considering that the terms 
+computer, machine and system are often used interchangeably. In this 
+context, HCI is a design that should produce a fit between the user, the 
+machine and the required services in
+ 
+order to achieve a certain performance 
+both in quality and optimality of the services [61]. Determining what makes a 
+certain HCI design good is mostly subjective and context dependant. For 
+example, an aircraft part designing tool should provide high preci
+sions in 
+view and design of the parts while a graphics editing software may not need 
+such a precision. The available technology could also affect how different 
+types of HCI are designed for the same purpose. One example is using 
+commands, menus, graphical 
+user interfaces (GUI), or virtual reality to access 
+functionalities of any given computer [66]
+ 
+ 

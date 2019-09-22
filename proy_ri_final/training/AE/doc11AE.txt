@@ -1,0 +1,274 @@
+Enterprise Architecture: Bu
+siness and IT Alignment Carla Marques Pereira 
+carla.pereira@link.pt 
+  Pedro Sousa 
+pedro.sousa@link.pt 
+Link Consulting SA & IST/DEI 
+Av. Rovisco Pais, 1049-001 Lisboa, Portugal. 
+ABSTRACT 
+Organizations have existing systems infrastructure that are the 
+result of decades of one-by-one implementations of specific 
+solutions. As organizations, products, customers and technologies 
+
+continue to change at an increasingly rapid rate, managers have 
+
+sought overviews that will allow them to understand how Business 
+and IT within their organization fits together. Enterprise 
+Architecture is a representation of the organization to enable the 
+
+planning of the organization changes. It includes the current and 
+
+future business objectives, goals, visions, strategies, informational 
+entities, business processes, people, organization structures, 
+application systems, technological infrastructures, and so on. 
+
+In this paper, we show how the alignment between Business and 
+
+IT can be disaggregated into four different dimensions and we 
+present some heuristics to ensure such alignment. 
+Keywords 
+Enterprise Architecture, Alignment, Alignment Heuristics. 
+1. INTRODUCTION 
+The alignment between Business and Information Systems is a 
+key issue in every organization, given the impact it has in the 
+
+overall organization. The need for repeated data insertions in 
+different systems, the effort required to keep multiple replicas of 
+
+the same information coherency and the lack of business 
+
+information are common examples of such misalignment. 
+The concept of alignment is based on ideas commonly used in 
+the Enterprise Architecture Frameworks (EAFs) [4, 7, 8, 9], where 
+
+organization Business and IT are drawn. However, even though 
+
+business and IT are commonly understood concepts, they are 
+addressed differently in different frameworks. Therefore, in this 
+work we try to express business and IT alignment in terms of well 
+
+understood components, found in most EAFs, namely Business, 
+
+Information, Application and Technology  Architectures. 
+2. ARCHITECTURAL COMPONENTS 
+ALIGNMENT 
+Although a formal definition of the alignments™ concept is an on 
+going work, we all face evidences of misalignments in everyday 
+
+live. The concept firstly appeared in the 1970™s [2, 3, 5] and its 
+
+relevancy and actuality is unquestionable, given the level of 
+
+dissatisfaction that exists in or
+ganizations regarding to their 
+information systems.  
+We define Alignment among Business, Systems and Information 
+as a way to quantify the coherency level in relation to the business 
+necessity, the systems offer and information management [6].  
+Attending to this definition, our understanding about alignment 
+is the result of these possible misalignments: (1) between Business 
+Process (BP) and Information; (2) between BP and Applications; 
+(3) between Applications and Information; (4) between IT and 
+Information; and (5) between Applications and IT. The scope of 
+this work does not include IT architecture and emphasizes the first 
+three alignments.  
+Therefore, alignment between Business Architecture (BA) and 
+Application Architecture (AA) is a concern with the automation of 
+work that employees actually need to do to use applications that 
+run the business, for example: insert the same data in several 
+
+systems; logging in several applications that support the same 
+
+business process; and manually tr
+ansform and process reports and 
+data that are produced by the application systems. 
+A measure of such misalignment would be the time/effort 
+business employees spend doing the work required for the use of 
+
+the application systems. All work that has no direct link to 
+business and it is only justified to interface with the Applications 
+infrastructure is an evidence of misalignment between BA and AA. 
+
+Let us give a parallel example with the purpose driving the car. 
+
+The business purpose would be to move forward/backwards at a 
+given speed, break and so on. In this sense, manual gears are less 
+aligned than automatic gears, because it requires more work for the 
+
+driver to use the car, with no impact on the business goals. An 
+
+example of misalignment between BA and AA is when, each time, 
+an employee is admitted in the organization and business people 
+have to register him/her in several application systems. BA and AA 
+
+alignment is most related with BP automation.  
+Alignment between AA and (Information Architecture) IA is 
+mostly about the effort IT people spend to provide necessary 
+
+information for applications and business operations running. It is 
+
+a well known fact that the same information (example, customer 
+
+address) is replicated several times in organization systems and 
+that a significant portion of IT budget goes to maintain the 
+
+code/procedures that keep replicas coherent and updated. 
+An ERP System (Enterprise Resource Planning) is a good 
+example of AA and AI alignment. By having a single database, 
+ERPs do achieve a highly aligned Application and Information 
+Architectures because there are no information replicas within the 
+ERP to keep it coherent and updated. However, this does not mean 
+that ERP Workflows are aligned with the business processes.  
+Using the employee admission example, examples of 
+misalignment between Application 
+Information Architectures is 
+the time IT people spend on: 
+ Running synchronization programs for updating the 
+employee lists among different applications; 
+ Dealing with eventual errors during the synchronization 
+process; 
+ Permission to make digital or hard copies of all or part of this work fo
+rpersonal or classroom use is granted without fee provided that copies are
+not
+ made or distributed for
+ profit or commercial advantage 
+and that copies bear this notice and the full citation on the first page. To copy otherwise, o
+rrepublish, to post on servers or to redistribute to lists, requires prior 
+specific permission and/or a fee. 
+SAC™05, March 13Œ17, 2005, Santa Fe, NM, USA. Copyright 2005 ACM 1-58113-964-0/05/0003–$5.00. 13442005 ACM Symposium on Applied Computing Updating and maintaining the batch programs when new 
+fields are necessary or when new applications are involved 
+in the management of the list.  
+Alignment between BA and IA is constant concern with 
+providing information required to perform non-automated actions: 
+ Implicit decisions in business processes; 
+ Controlling and managing the business; 
+ Decision making.  
+In a well aligned BA and IA, business managers spend no time 
+searching for information that their systems could provide. An 
+example of misalignment between BA and IA is when the client 
+has to ask the supplier for things he is buying. 
+2.1 Alignment Heuristics 
+We have been using alignment heuristics as rules for achieving 
+architectures™ alignment. In most cases, heuristics are no more than 
+an alert to a situation that requires further analyses and 
+justification. For example, a process that is performed without 
+accessing to any information entity or an information entity that is 
+never created. In this section we li
+st a set of heuristics that have 
+been helping us to diagnosis the 
+state of alignmen
+t, identifying 
+several factors that represent most of the cases of misalignment. 
+2.1.1
+ Alignment between Business Architecture and 
+Information Architecture 
+In this paper, alignment between BA and IA is restricted to the 
+relationships between business processes and informational 
+entities. 
+Information Entities must have a way of identification (from a 
+business perspective), a description and a set of attributes. 
+Attributes are related to business processes and to application 
+systems.  
+The Heuristics to apply to this alignment are: 
+ All processes create, update and/or delete at least one entity; 
+ All entities attributes are read at least by one process; 
+ All processes assume the same entity description. This 
+means that there is a single interpretation of the entity. 
+2.1.2
+ Alignment between Business Architecture and 
+Application Architecture 
+In the alignment between BA and AA, we are restricted to the 
+relationships between business processes and application systems. 
+Application properties are classified as availability (up time), 
+scalability (ability to scale up performance), profile based accesses 
+(ability to identify who does each task).  
+The heuristics to apply to this alignment are: 
+ Each business process should be supported by at least one 
+application system; 
+ Business process tasks should be supported by a single 
+application; 
+ Critical business process should depend on scalable and 
+available applications; 
+ Each application system functionality should support at least 
+one business process task. 
+2.1.3
+ Alignment between Application Architecture and 
+Information Architecture 
+Alignment between AA and IA deals with the relationships 
+between application systems and informational entities.  
+When applications use information entities, the attributes should 
+be classified as security (public, private, confidential). Information 
+Entities must have identification. 
+The heuristics to apply to this alignment are: 
+ An entity is managed by only one application. Managed 
+means create, assign and have identification. Other 
+applications may update entities fields; 
+ If an information entity™s ID is recovered, then the 
+corresponding information entity should be created and 
+
+deleted by the same computational process; 
+ The data management should be automatic among the 
+application systems; 
+ Private entities should depend on restricted access 
+applications; 
+ Confidential entities should depend on restricted access 
+applications; 
+ The rate of updates should be correlated with rate of reads. 
+3. FURTHER RESEARCH 
+The Alignment Heuristics has the goal of providing a measure to 
+better formulate, understand, analyze and evaluate an organization 
+
+from the Information Systems point of view and for that we use 
+
+the Enterprise Architecture™s concepts. We use it to achieve a 
+superior alignment between business and IS, however, due to the 
+constant changes in organization, business and technology, 
+
+ensuring alignment must be perceived as a process not a static 
+
+result. This dynamic aspect of the work is an issue to future 
+research. In current research is not intentionally present in this 
+work the alignment among TA and the other architectures, in 
+
+which our approach to the IT issue follows the SOA paradigm. 
+It is also our aim in future research to have a cross view among 
+some of the key issues that support the alignment, such as: list of 
+evidences of misalignment; questions on specific roles in the 
+
+targeted organization which answers reveal the nature and status of 
+
+alignment [1]; and, of course, alignment heuristics. 
+4. REFERENCES 
+1. Ambler, Scott W., Agile Enterprise Architecture: Beyond 
+Enterprise Data Modeling, 2002, 
+
+http://www.agiledata.org/essays/enterpriseArchitecture.html 
+2. Henderson, J.C. and N. Venkatr
+aman, Strategic Alignment: 
+Leveraging Information Technology for Transforming 
+Organizations, IBM Systems 
+Journal, 32, 4-16, 1993 
+3. Luftman, J.N., P.R. Lewis and S.H. Oldach, Transforming the 
+Enterprise: The Alignment of Business and Information 
+Technology Strategies, IBM Systems Journal, 32, 198-221, 
+1993 4. Macaulay, Andrew, Enterprise Architecture Design and the 
+Integrated Architecture Framework, Microsoft Architects 
+
+Journal, January 2004  
+5. Niederman, Fred, Brancheau, James C. and Wetherbe, James 
+C., Information Systemns Management Issues for the 1990s, 
+MIS Quartely, Volume 14, Number 4, December 1991 
+6. Pereira, Carla Marques and Sousa, Pedro, Getting into the 
+misalignment between Business and Information Systems, 
+The 10th European Conference on Information Technology 
+Evaluation, Madrid, Spain, September 2003 
+7. Swoa, J. F and Zachman , J. A., Extending and formalizing 
+the framework for information systems architecture, IBM 
+
+Systems Journal, Volume 31, Number 3, 1992 
+8. http://www.opengroup.org/arch
+itecture/togaf8-doc/arch/ 
+9. Zachman , John A., A Framework for Information Systems 
+Architecture, IBM Systems Jour
+nal, Volume 26, Number 3, 
+1987 1345View publication statsView publication stats

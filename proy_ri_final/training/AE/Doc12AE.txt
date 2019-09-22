@@ -1,0 +1,256 @@
+Architecture and his
+ 
+concepts
+ 
+ 
+Introduction
+ 
+ 
+In current business practice, an integrated approach to business and IT is 
+indispensable. As a real
+-
+life example, take the Dutch government, who are
+ 
+currently undertaking a massive 
+redesign of the entire chain of organisations 
+involved in the social security system. Within this context, the collection of 
+
+security organisation to the tax administration. This so
+unds logical, since 
+collecting taxes is superficially very similar to collecting social security 
+premiums. However, this seemingly simple change entails a major redesign of 
+organisational structures, business processes, IT applications, and technical 
+infra
+structure. Enormous flows of data need to be redirected within and among 
+the different organisations: more than 600,000 payroll tax returns are filed 
+each month, a large proportion of which arrive within a peak period of a 
+couple of days.
+ 
+Controlling such 
+
+get to grips with this complex, multi
+-
+faceted world?
+ 
+ 
+Architecture
+ 
+ 
+It is often said that to manage the complexity of any large organisation or 
+system, you need architecture. But what 
+
+course, we have long known this notion from building and construction.
+ 
+ 
+ 
+Suppose you contract an architect to des
+ign your house. You discuss how 
+rooms, staircases, windows, bathrooms, balco
+nies, doors, a roof, etc., wil
+l 
+be 
+put together. You agree on a master 
+plan, on the basis of which the 
+architect 
+will produce detailed specificatio
+ns, to be used by the engineers 
+and builders.
+ 
+ 
+How is it that you can communicate s
+o efficiently about that master 
+plan? We 
+think it is bec
+ause you share a common frame of refe
+rence: you 
+both know 
+
+, etc. You know their 
+function and 
+
+xample, serves as a shelter and 
+is connected to 
+
+us
+e, mentally, an architectural 
+model of 
+a house. This model defines its major functions and
+ 
+how they are structured. It provides an abstract design, ignoring manydetails. 
+These details, like the number of rooms, dimensions, materials to
+ 
+be used, and 
+colours
+, will be filled in later.
+ 
+A similar frame of reference is needed
+ 
+in designing an enterprise. To 
+create an 
+overview of the structure of an organi
+sation, its business processes, 
+their 
+application support, and the tec
+hnical infrastructure, you need 
+to expres
+s the 
+different aspects and domains, and their relations.
+ 
+
+n in building and construction, 
+the term 
+is not without ambiguity. It can signify t
+he art and science of designing 
+the 
+built environment, or the prod
+uct of suc
+h a design. Thus, the 
+term architecture 
+can encompass both the blueprint for a building and the
+ 
+
+. 
+There are different schools of thought on this. Some say we should reserve
+ 
+the 
+
+ 
+solely for such principles and 
+constraints on the design space, as e.g. Di
+etz argues (2006), who uses the 
+term 
+
+igns. In this book, we will use 
+the IEEE 
+1471
+-
+2000 / ISO/IEC 420
+10:2007 (IEEE Computer Society
+ 
+2000; see also Sect. 2.2.2) definition of architecture:
+ 
+Architecture 
+is the fundamental organisation of a system embodied in its 
+components, their relationships to each
+ 
+other, and to the environment, and the 
+principle guiding its design and evolution.
+ 
+ 
+This definition accommodates both the blueprint and the general principles. 
+
+architecture pro
+vides an integrated view of the system being designed or 
+studied.
+ 
+ 
+As well as the definition of architecture, we will use two other important 
+
+ 
+ 
+Stakeholder
+: an individual, team, o
+r organisation (or classes thereof) with 
+interests in, or concerns relative to, a system.
+ 
+ 
+Most stakeholders of a system are probably not interested in its architecture, 
+but only in the impact of this on their concerns. However, an architect needs to 
+be aw
+are of these concerns and discuss them with the stakeholders, and thus 
+should be able to explain the architecture to all stakeholders involved, who 
+will often have completely different backgrounds.
+ 
+ 
+Enterprise Architecture
+ 
+ 
+More and more, the notion of arc
+hitecture is applied with a broader scope than 
+just in the technical and IT domains. The emerging discipline of enterprise 
+engineering views enterprises as a whole as purposefully designed systems 
+that can be adapted and redesigned in a systematic and cont
+rolled
+ 
+
+Group 2009a):
+ 
+ 
+Enterprise
+: any collection of organisations that has a common set of goals 
+and/or a single bottom line.
+ 
+Architecture at the level of an entire organisation is commonly referred to
+ 
+
+architecture:
+ 
+ 
+Enterprise architecture
+: a coherent whole of principles, methods, and 
+models that are use
+
+organisational structure, business processes, information systems and 
+infrastructure.
+ 
+ 
+Enterprise architecture captures the essentials of the business, IT and its 
+evolution. The idea is that the essentials
+ 
+are much more stable than the 
+specific solutions that are found for the problems currently at hand. 
+Architecture is therefore helpful in guarding the essentials of the business, 
+while
+ 
+still allowing for maximal flexibility and adaptivity. Without good 
+arc
+hitecture,
+ 
+it is difficult to achieve business success.
+ 
+ 
+The most important characteristic of an enterprise architecture is that it 
+provides a holistic view of the enterprise. Within individual domains local 
+optimisation will take place and from a reductio
+nistic point of view, the 
+architectures within this domain may be optimal. However, this need not lead 
+to a desired situation for the company as a whole. For example, a highly 
+optimised technical infrastructure that offers great performance at ow cost 
+migh
+t turn out to be too rigid and inflexible if it needs to support highly agile 
+and rapidly changing business processes. A good enterprise architecture 
+provides the insight needed to balance these requirements and acilitates the 
+translation from corporate st
+rategy to daily operations.
+ 
+ 
+To achieve this quality in enterprise architecture, bringing together 
+information from formerly unrelated domains necessitates an approach that is 
+understood by all those involved from these
+ 
+different domains. In contrast to 
+building architecture, which has a history over millennia in which a
+ 
+common language and culture has been established, such a shared frame of 
+reference is still lacking in business and IT. In current practice, architectur
+e 
+descriptions are heterogeneous in nature: each domain has its own description 
+techniques, either textual or graphical, either informal or with a
+ 
+precise meaning. Different fields speak their own languages, draw their own 
+models, and use their own techniq
+ues and tools. Communication and decision 
+making across these domains is seriously impaired.
+ 
+ 
+What is part of the enterprise architecture, and what is only an implementation 
+within that architecture, is a matter of what the business defines to be the 
+archi
+tecture, and what not. The architecture marks the separation between 
+what should not be tampered with and what can be filled in more freely. This 
+places a high demand for quality on the architecture. Quality means that the 
+architecture actually helps in ac
+hieving essential business objectives. In 
+constructing and maintaining architecture, choices should therefore be related 
+to the business objectives, i.e., they should be rational
+ 
