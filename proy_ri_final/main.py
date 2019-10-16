@@ -1,9 +1,7 @@
 import os
 import PyPDF2
-from gtts import gTTS
 import nltk
 import sklearn
-import glob
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
@@ -69,7 +67,8 @@ def leerDocumentos():
 	listaDoc = []
 	labels   = []
 	labels_doc = []
-	for r, dirs, files in os.walk('/home/maye/Escritorio/pdfAprbado/training'):
+
+	for r, dirs, files in os.walk(os.path.join(os.getcwd(), 'training')):
 		for file in files:
 			if ".txt" in file:
 				pdf2txt(r, file)
@@ -77,7 +76,7 @@ def leerDocumentos():
 				cleanS = limpia_texto(text)
 				#print(cleanS)
 				listaDoc.append(cleanS)
-				labels.append(r.replace('/home/maye/Escritorio/pdfAprbado/training',''))
+				labels.append(r.replace(os.path.join(os.getcwd(), 'training'),''))
 				labels_doc.append(file)
 	
 	return dict([('docs', listaDoc), ('labels', labels), ('labels_doc', labels_doc)])
@@ -134,7 +133,7 @@ def kmeans_busq(dic_doc, consulta, cant):
 
 def imprimir_doc(docs, categoria):
 
-	DIR = '/home/maye/Escritorio/pdfAprbado/training'
+	DIR = os.path.join(os.getcwd(),'training')
 	d = os.path.join(DIR,categoria.replace('/', ''))
 	directorios = os.listdir(d)
 	for doc in docs:
@@ -166,6 +165,7 @@ def obtener_cantdoc(cat, labels):
 		if etiq == cat:
 			cont += 1
 	return cont
+
 
 dic = leerDocumentos()
 """ https://unipython.com/como-preparar-datos-de-texto-con-scikit-learn/ """
